@@ -3,5 +3,6 @@ class AppButton {
 
   static const String nextButton = "${base}next_button.png";
   static const String getStarted = "${base}get_started.png";
+  static const String singIn = "${base}sing_in.png";
 
 }
