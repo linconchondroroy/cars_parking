@@ -76,7 +76,8 @@ class OnboardingScreenTwo extends GetView<OnboardingControllerTwo> {
                   Image.asset(AppIcons.toggelTwoButton),
                   InkWell (
                       onTap: ()=>controller.secoundScreenToThirdScreen(),
-                      child: Image.asset(AppButton.nextButton)),
+                      child: Image.asset(AppButton.nextButton)
+                  ),
                 ],
               ),
             ),

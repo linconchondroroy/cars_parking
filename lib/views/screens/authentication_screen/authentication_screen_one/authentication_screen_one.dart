@@ -1,7 +1,9 @@
 import 'package:cars_parking/theme/colors/app_colors.dart';
+import 'package:cars_parking/theme/image/app_image.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class AuthenticationScreenOne extends StatelessWidget {
+class AuthenticationScreenOne extends GetView<AuthenticationScreenOne> {
   const AuthenticationScreenOne({super.key});
 
   @override
@@ -12,7 +14,8 @@ class AuthenticationScreenOne extends StatelessWidget {
       ),
       body: Column(
         children: [
-
+          Center(child: Image.asset(AppImages.login_screen)
+          ),
         ],
       ),
     );

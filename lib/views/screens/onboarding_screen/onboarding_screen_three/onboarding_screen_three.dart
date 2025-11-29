@@ -2,10 +2,12 @@ import 'package:cars_parking/theme/button/app_button.dart';
 import 'package:cars_parking/theme/colors/app_colors.dart';
 import 'package:cars_parking/theme/icons/app_icons.dart';
 import 'package:cars_parking/theme/image/app_image.dart';
+import 'package:cars_parking/views/screens/onboarding_screen/onboarding_screen_three/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-class OnboardingScreenThree extends StatelessWidget {
+class OnboardingScreenThree extends GetView<OnboardingControllerThree> {
   const OnboardingScreenThree({super.key});
 
   @override
@@ -38,7 +40,7 @@ class OnboardingScreenThree extends StatelessWidget {
 
             SizedBox(height: 20.h,),
 
-            Text("Real-Time Parking\nUpdates",
+            Text("Real-Time Parking Updates",
               style: TextStyle(color:
               AppColors.textPrimaryColor,
                 fontSize: 32.sp, fontWeight: FontWeight.w700,
@@ -66,7 +68,10 @@ class OnboardingScreenThree extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Image.asset(AppIcons.toggelThreeButton,),
-                  Image.asset(AppButton.getStarted),
+                  InkWell(
+                    onTap:()=> controller.thirdScreenToThirdScreen(),
+                    child: Image.asset(AppButton.getStarted),
+                  ),
                 ],
               ),
             ),
