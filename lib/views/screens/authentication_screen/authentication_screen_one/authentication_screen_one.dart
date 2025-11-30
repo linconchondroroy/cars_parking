@@ -14,7 +14,8 @@ class AuthenticationScreenOne extends GetView<AuthenticationScreenOne> {
       ),
       body: Column(
         children: [
-          Center(child: Image.asset(AppImages.login_screen)
+          Center(child: Image.asset(
+              AppImages.login_screen),
           ),
         ],
       ),
