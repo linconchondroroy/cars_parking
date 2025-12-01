@@ -3,5 +3,6 @@ class AppPages{
   static final Onboarding= '/onboading';
   static final OnboardingTwo ="/onboardingTwo";
   static final OnboardingThree = "/onboardingThree";
-  static final LogInScreen = "/onboardingThree";
+  //static final LogInScreen = "/onboardingThree";
+  static final LoginScreen = '/loginscreen';
 }

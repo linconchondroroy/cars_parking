@@ -69,7 +69,9 @@ class OnboardingScreenThree extends GetView<OnboardingControllerThree> {
                 children: [
                   Image.asset(AppIcons.toggelThreeButton,),
                   InkWell(
-                    onTap:()=> controller.thirdScreenToThirdScreen(),
+                    onTap: (){
+                      controller.goToAuthention();
+                    },
                     child: Image.asset(AppButton.getStarted),
                   ),
                 ],
