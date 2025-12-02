@@ -29,17 +29,18 @@ class LoginScreen extends GetView<LoginScreenController> {
 
           Column(
             children: [
-              Row(
-                children: [
-                  Container(
-                    child: Text("email"),
-                  )
-                ],
+              TextField(
+                decoration: InputDecoration(
+                  hintText: "example@gmail.com",
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
               ),
             ],
-          )
+          ),
         ],
-      ),
-      );
-    }
+      )
+    );
+  }
 }
