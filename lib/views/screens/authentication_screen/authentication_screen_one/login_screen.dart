@@ -42,7 +42,7 @@ class LoginScreen extends GetView<LoginScreenController> {
                       borderSide: BorderSide(
                         color: AppColors.textPrimaryColor,
                         width: 1.5,
-                      )
+                       ),
                       )
                     )
                   ),
