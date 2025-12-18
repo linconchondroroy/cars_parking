@@ -20,6 +20,5 @@ class AppRouts {
     GetPage(name: AppPages.OnboardingThree, page: ()=> OnboardingScreenThree(), binding: OnboardingBindingsThree()),
     GetPage(name: AppPages.LoginScreen, page:()=>LoginScreen(),binding: AuthenticationBindings())
   ];
-
 }
 

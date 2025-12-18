@@ -7,5 +7,4 @@ class AuthenticationBindings extends Bindings{
     // TODO: implement dependencies
     Get.put(LoginScreenController());
   }
-
 }
